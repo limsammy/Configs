@@ -1,7 +1,10 @@
 # Configs
-### .gitignore
+
+## Git
+### .gitconfig
 A collection of git aliases for helpful visualizations. More to be added.
-### .zshrc
+
+## zsh/oh-my-zsh
 My custom zshell prompt config.
 
 TODO
