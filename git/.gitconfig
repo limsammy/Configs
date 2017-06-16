@@ -1,0 +1,15 @@
+[user]
+	name = Sam Lim
+	email = limsammy1@gmail.com
+[color]
+	ui = true
+[core]
+	excludesfile = /Users/sam/.gitignore
+[alias]
+	lgb = log --graph --oneline --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset%n' --abbrev-commit --date=relative --branches --tags
+    la = "!git config -l | grep alias | cut -c 7-"
+    tree = 
+    treetest = !"git treetest-specific --all"
+
+    tree-specific = log --graph --full-history --all --color --pretty=tformat:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s%x20%x1b[33m(%an)%x1b[0m"
+    treetest-specific = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset) %C(bold cyan)(committed: %cD)%C(reset) %C(auto)%d%C(reset)%n''          %C(white)%s%C(reset)%n''          %C(dim white)- %an <%ae> %C(reset) %C(dim white)(committer: %cn <%ce>)%C(reset)'
